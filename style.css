@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #343a40;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #003366;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #f5d300;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Section - Box Style */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: url('dubai-skyline.jpg') no-repeat center center/cover;
+  color: white;
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem; /* Space after hero section */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero .cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #003366; /* Dark blue color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.hero .cta:hover {
+  background-color: #002244; /* Darker blue shade on hover */
+  transform: scale(1.05);
+}
+
+/* Section Boxes */
+.about, .services, .case-studies, .contact {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Service and Case List Styling */
+.service-list, .case-list {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.service, .case {
+  flex: 1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service:hover, .case:hover {
+  transform: translateY(-5px);
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+form .cta {
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  background-color: #003366; /* Dark blue color */
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  transition: all 0.3s ease;
+}
+
+form .cta:hover {
+  background-color: #002244; /* Darker blue shade on hover */
+  transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .footer-content p {
+  margin: 0.5rem 0;
+}
+
+footer .linkedin {
+  margin: 1rem 0;
+}
+
+footer .address {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+footer .linkedin-btn {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  background-color: #003366; /* Dark blue color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+footer .linkedin-btn:hover {
+  background-color: #002244; /* Darker blue shade on hover */
+  transform: scale(1.05);
+}
