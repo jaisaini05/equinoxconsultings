@@ -49,16 +49,32 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Hero Section - Box Style */
+/* Responsive Header Navigation */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  nav a {
+    text-align: left;
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 5rem 2rem;
   background: url('dubai-skyline.jpg') no-repeat center center/cover;
   color: white;
-  background-size: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem; /* Space after hero section */
 }
 
 .hero h1 {
@@ -69,7 +85,7 @@ nav a:hover {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
-  background-color: #003366; /* Dark blue color */
+  background-color: #003366;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -77,26 +93,33 @@ nav a:hover {
 }
 
 .hero .cta:hover {
-  background-color: #002244; /* Darker blue shade on hover */
+  background-color: #002244;
   transform: scale(1.05);
 }
 
-/* Section Boxes */
-.about, .services, .case-studies, .contact {
-  background-color: #ffffff;
-  padding: 3rem 2rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
 }
 
-/* Section Titles */
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+/* Section Colors */
+.about, .services, .case-studies {
+  background-color: #e6f2ff;
+  padding: 3rem 0;
 }
 
-/* Service and Case List Styling */
+.contact {
+  background-color: #f2f4f5;
+  padding: 3rem 0;
+}
+
+/* Grid Layouts */
 .service-list, .case-list {
   display: flex;
   gap: 2rem;
@@ -108,7 +131,7 @@ h2 {
   flex: 1;
   padding: 1.5rem;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -117,13 +140,24 @@ h2 {
   transform: translateY(-5px);
 }
 
+/* Responsive Grid Layout */
+@media (max-width: 768px) {
+  .service-list, .case-list {
+    flex-direction: column;
+  }
+
+  .service, .case {
+    max-width: 100%;
+  }
+}
+
 /* Form Styling */
 form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 100%;
+  padding: 1rem;
 }
 
 input, textarea {
@@ -141,7 +175,7 @@ textarea {
 form .cta {
   text-align: center;
   padding: 0.75rem 1.5rem;
-  background-color: #003366; /* Dark blue color */
+  background-color: #003366;
   color: white;
   text-decoration: none;
   border: none;
@@ -152,7 +186,7 @@ form .cta {
 }
 
 form .cta:hover {
-  background-color: #002244; /* Darker blue shade on hover */
+  background-color: #002244;
   transform: scale(1.05);
 }
 
@@ -187,7 +221,7 @@ footer .linkedin-btn {
   display: inline-block;
   margin: 0 auto;
   padding: 0.75rem 1.5rem;
-  background-color: #003366; /* Dark blue color */
+  background-color: #003366;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -195,6 +229,19 @@ footer .linkedin-btn {
 }
 
 footer .linkedin-btn:hover {
-  background-color: #002244; /* Darker blue shade on hover */
+  background-color: #002244;
   transform: scale(1.05);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  footer .footer-content {
+    text-align: left;
+    padding: 1rem;
+  }
+
+  footer .linkedin-btn {
+    width: 100%;
+    text-align: center;
+  }
 }
